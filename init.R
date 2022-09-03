@@ -27,5 +27,6 @@ oc.init <- function()
 
 Rserve::run.Rserve(
     debug = TRUE,
+    websockets.port = Sys.getenv("PORT", "8000"),
     config.file = "rserve.conf"
 )

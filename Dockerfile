@@ -8,5 +8,4 @@ RUN install2.r --error \
 COPY rserve.conf .
 COPY init.R .
 
-EXPOSE 8000
 ENTRYPOINT R -f init.R
